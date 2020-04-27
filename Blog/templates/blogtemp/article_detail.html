@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+{% block ForAll %}
+    <li><a class = 'P4' href = '/'>Home</a></li>
+    <li><a class = 'P4' href = '/blogs/all/'>Back_Page</a></li>
+{% endblock ForAll %}
+
+{% block content %}
+
+    <p id = 'p1'><h1>{{ article_object.title|upper }}</h1></p>
+    <p id = 'p2'>{{ article_object.content }}</p>
+    k<p>{{ article_object.active }}</p>
+
+    <a class = 'cancel_button' href = '/blogs/delete/{{ article_object.id }}/'>Delete</a>
+
+{% endblock content %}
+
+
+
+
+

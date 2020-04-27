@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+    {% block title %}
+        <title>Blog_Page </title>
+    {% endblock title %}    
+    <link rel = 'stylesheet' type = 'text/css' href = "{% static 'css/file1.css' %}">
+
+    
+
+
+</head>
+<body>
+
+    <ul>
+        {% block ForAll %}
+            <li><a class = 'P4' href = '/'>Home</a></li>
+            <li><a class = 'P4' href = '../'>Back_Page</a></li>
+        {% endblock ForAll %}
+    </ul>
+
+    <p>
+    {% block content %}
+    {% endblock content %}
+    </p>
+
+    {% include 'footer.html' %}
+    <p>"made with love with Django ;-{) "</p>
+</body>
+</html>

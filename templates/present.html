@@ -1,0 +1,38 @@
+{% extends 'base.html' %} <!-- if you do this then you cannot include anything from anything.html -->
+<!doctype html>
+<html>
+<head>
+    <title>Hi</title>
+</head>
+<body>
+    <div>Hi friends</div>
+    {% block content %}
+        
+        <p> Experimenting with context variables, for loop and if, else conditions</p>
+    
+    <!--{% include 'footer.html' %}
+        {% include 'middle.html' %}   without removing the 'extends' line, one cannot use these 
+        'include's -->
+
+        <p>
+            <ol>
+                <li><h3>{{ my_college_id }}</h3></li>
+                <li id = "P3">{{ Mob }}</li>
+                <li class = "P3">{{ Friends_list }}</li>
+                {% for instance in Friends_list %}
+                <ul>
+                    {% if instance == is_true %}
+                        <li class = "P3"> {{ forloop.counter|add:4 }}::{{ instance }}</li>
+                    {% elif instance == is_false %}
+                        <li>{{ forloop.counter }}// {{ instance }}</li>
+                    {% else %}
+                        <li class = "P5"> {{ forloop.counter|add:1 }}-{{ instance }}</li>
+                    {% endif %}
+                </ul>
+                {% endfor %}
+            </ol>
+        </p>
+    {% endblock content %}
+</body>
+
+</html>

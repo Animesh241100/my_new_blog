@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    {% block Test_title %}
+        <title> This title is inherited from base.html</title>
+    {% endblock Test_title %}
+
+    <style>
+        .P1 {
+			font-size            : 50px  ;
+			width                : 20%;
+			height               : 40%;
+			text-decoration-color: pink;
+			background-color     : #000929;
+			float                : left;
+			margin-left          : 10px;
+		}
+        #P4{
+			background-color: #00001f;
+		}
+        .P5{
+			background-color: green;
+			color           : black;
+            font-size            : 50px
+		}
+		.P2 {
+			color    : white;
+			font-size: 30px;
+		}
+		#P3 {
+			color    : yellow;
+			font-size: 20px;
+		}
+    </style>
+</head>
+
+<body>
+    {% block Heading %}
+        <h1>This heading is inherited from base.html<h1>
+    {% endblock Heading %}
+    {% block Quora_link_button %}
+        <a href = "https://qr.ae/T63oIq" class = "P1" target = "_blank" >Quora</a>
+    {% endblock Quora_link_button %}
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>

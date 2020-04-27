@@ -1,0 +1,14 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+    
+    <h1>The available articles on my website</h1>
+    <ul>
+    {% for obj in Object_list %}
+        <li><a class ='P4' href = '{{ obj.get_absolute_url }}'>{{ obj.title }}       Active:{{ obj.active }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}
+
+

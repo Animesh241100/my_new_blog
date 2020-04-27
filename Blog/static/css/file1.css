@@ -1,0 +1,157 @@
+
+.delete_button{
+    background-color: rgb(2, 240, 53); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.cancel_button:link, .cancel_button:visited{
+    background-color: rgb(240, 2, 2); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.cancel_button:hover, .cancel_button:active{
+    background-color: rgb(228, 141, 59); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+p {
+    font-size: 30px  ;
+    width: 85%;
+    color: white;
+}
+
+
+
+.P1 {
+    color: black;
+    font-size: 30px;
+}
+
+
+.P2 {
+    font-size: 50px  ;
+    width: 20%;
+    height: 40%;
+    text-decoration-color: pink;
+    background-color: #9a15e7;
+    float: left;
+    margin-left: 10px;
+    color: black;
+}
+
+.P3 {
+    font-size: 30px  ;
+    width: 100%;
+    height: 13%;
+    text-decoration-color: rgb(255, 21, 0);
+    float: left;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.P4:link, .P4:visited{
+    font-size: 30px  ;
+    width: 28%;
+    height: 12%;
+    text-decoration-color: rgb(255, 21, 0);
+    background-color: royalblue;
+    float: center;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.P4:hover, .P4:active {
+    font-size: 31px  ;
+    width: 25%;
+    height: 13%;
+    background-color: rebeccapurple;
+    text-decoration-color: rgb(255, 21, 0);
+    float: center;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 66px  ;
+    font-family: 'Public Sans';
+    color: #ffffff;
+    text-align: center;
+}
+
+h2{
+    font-size: 50px  ;
+    font-family: 'Public Sans';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3{
+    clear: left;
+    font-size: 40px  ;
+    font-family: 'Public Sans';
+    color: rgb(255, 0, 0); 
+    text-align: left;
+}
+
+
+/*
+a:link, a:visited{
+    text-decoration: none;
+    background-color: #000f0f;
+    font-size: 40px  ;
+    border: 2px solid white;
+    display: block;
+    width: 20%;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    background-color: red;
+    font-size: 42px  ;
+    border: 1px solid white;
+    display: block;
+    width: 21%;
+}
+*/
+
+#p1{
+    background-color: #00001f;
+    font-size: medium;
+}
+
+#p2 {
+    color: yellow;
+    font-size: 30px;
+}
+
+
+body{
+    background-image: url("/static/img/wp1828913-programmer-wallpapers.jpg");
+}
